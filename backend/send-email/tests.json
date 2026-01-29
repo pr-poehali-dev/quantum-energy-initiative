@@ -1,0 +1,27 @@
+{
+  "tests": [
+    {
+      "name": "Test email endpoint with valid data",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Тест Тестов",
+        "phone": "+79991234567",
+        "email": "test@example.com",
+        "message": "Тестовое сообщение",
+        "to": "108@okbssp.ru"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Test OPTIONS request for CORS",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    }
+  ]
+}

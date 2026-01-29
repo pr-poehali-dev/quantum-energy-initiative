@@ -8,6 +8,7 @@ export interface Section {
   showButton?: boolean
   buttonText?: string
   backgroundImage?: string
+  showForm?: boolean
 }
 
 export interface SectionProps extends Section {

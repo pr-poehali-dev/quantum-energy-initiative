@@ -1,4 +1,6 @@
 import { Badge } from "@/components/ui/badge"
+import ContactForm from './ContactForm'
+import Icon from '@/components/ui/icon'
 
 export const sections = [
   {
@@ -29,8 +31,6 @@ export const sections = [
   {
     id: 'join',
     title: 'Готовы защитить ваш объект?',
-    content: 'Оставьте заявку — наши специалисты рассчитают необходимое количество материалов и предложат оптимальное решение для вашего объекта.',
-    showButton: true,
-    buttonText: 'Заказать расчёт'
+    showForm: true
   },
 ]
